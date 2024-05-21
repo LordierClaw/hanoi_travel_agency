@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49404ecf-f8e7-47ef-8ca6-53d4c3964edc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hanoi_travel_agency.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/cloud_translate_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/cloud_vision_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/dialogflow_utils.py" afterDir="false" />
+    <list default="true" id="49404ecf-f8e7-47ef-8ca6-53d4c3964edc" name="Changes" comment="feat: add chatbox">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +33,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LordierClaw"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LordierClaw/hanoi_travel_agency.git",
+    "accountId": "015d4f2b-7079-44f5-86af-17bcf051edaf"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -61,7 +67,7 @@
     "Flask server.hanoi_travel_agency.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feat/add__frontend",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/PTIT/ThucTapCoSo/hanoi_travel_agency/credentials",
     "node.js.detected.package.eslint": "true",
@@ -114,12 +120,66 @@
       <option name="presentableId" value="Default" />
       <updated>1716307389402</updated>
       <workItem from="1716307396149" duration="10662000" />
-      <workItem from="1716318201669" duration="856000" />
+      <workItem from="1716318201669" duration="5889000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: add backend">
+      <option name="closed" value="true" />
+      <created>1716319069799</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716319069799</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: add chatbox">
+      <option name="closed" value="true" />
+      <created>1716327779764</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716327779764</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: add chatbox">
+      <option name="closed" value="true" />
+      <created>1716327787173</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716327787173</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add chatbox">
+      <option name="closed" value="true" />
+      <created>1716327793083</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716327793083</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: add chatbox">
+      <option name="closed" value="true" />
+      <created>1716327799926</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716327799926</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add chatbox">
+      <option name="closed" value="true" />
+      <created>1716327834500</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716327834500</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: add backend" />
+    <MESSAGE value="feat: add chatbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add chatbox" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -129,7 +189,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hanoi_travel_agency$hanoi_travel_agency.coverage" NAME="hanoi_travel_agency Coverage Results" MODIFIED="1716318522892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hanoi_travel_agency$hanoi_travel_agency.coverage" NAME="hanoi_travel_agency Coverage Results" MODIFIED="1716328144862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hanoi_travel_agency$test.coverage" NAME="test Coverage Results" MODIFIED="1716307923654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

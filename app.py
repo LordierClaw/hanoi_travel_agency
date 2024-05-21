@@ -2,7 +2,8 @@ import os
 import uuid
 
 from dotenv import load_dotenv
-from flask import Flask, request, session, jsonify
+from flask import Flask, request, session, jsonify, render_template
+from flask_cors import CORS
 from google.cloud import translate_v2 as translate
 from google.cloud import vision_v1 as vision
 
@@ -21,6 +22,12 @@ vision_client = vision.ImageAnnotatorClient()
 # Create Flask app
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
+CORS(app)
+
+
+@app.route("/")
+def index():
+    return render_template('index.html')
 
 
 @app.route('/api/v1/chat', methods=['POST'])
