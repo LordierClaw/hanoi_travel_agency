@@ -146,7 +146,7 @@ attachmentBtn.addEventListener("click", function () {
 
 fileInput.addEventListener("change", function () {
     const fileName = this.value.split("\\").pop();  // Extract filename
-    const maxChars = 25;  // You can adjust this to show the desired number of characters
+    const maxChars = 25;
     const displayedName = fileName.length > maxChars ? fileName.slice(0, maxChars) + "..." : fileName;
     fileNameSpan.textContent = displayedName ? `${displayedName}` : "";
     if (fileInput.files.length > 0) {
