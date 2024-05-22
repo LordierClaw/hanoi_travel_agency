@@ -1,5 +1,7 @@
 /.env
 /credentials/
-/credentials/**
+/credentials/*
 /.idea/
-/.idea/**
+/.idea/*
+/.venv/
+/.venv/*
