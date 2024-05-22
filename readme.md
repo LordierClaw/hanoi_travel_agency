@@ -1,3 +1,9 @@
+# Install packages
+Run the following command
+```commandline
+pip install -r requirements.txt
+```
+
 # Setup Environment
 - Step 1: Create .env file at the project directory
 - Step 2: Filling .env file with this information
