@@ -1,40 +1,253 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <title>Hanoi Travel Agency</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"/>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Du lịch việt</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
-</head>
-<body>
-<button class="chatbot-toggler">
-    <span class="material-symbols-rounded">mode_comment</span>
-    <span class="material-symbols-outlined">close</span>
-</button>
-<div class="chatbot">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+
+  <body>
     <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light"
+        style="background-color: #6dc5d1 !important; margin-bottom: 20px"
+      >
+        <div
+          class="container"
+          style="
+            max-width: 100%;
+            width: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <a class="navbar-brand" href="#">TRAVELICA</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active homeBtn" aria-current="page" href="#">
+                  <i class="fas fa-home"></i> Trang chủ
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook-f text-dark" style="font-size: 24px"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram text-dark" style="font-size: 24px"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://zalo.me" target="_blank">
+                  <i class="fab fa-twitter text-dark" style="font-size: 24px"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                >
+                  <i class="fab fa-github text-dark" style="font-size: 24px"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container" style="max-width: 85%; width: 100%">
+      <div class="row">
+        <div class="col-md-12" style="display: flex">
+          <div class="col-md-12">
+            <div class="row listProduct"></div>
+          </div>
+        </div>
+        <div class="col-md-12 tourDetail"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="clear"></div>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="my-5 footer">
+      <!-- Footer -->
+      <footer
+        class="text-center text-lg-start text-dark"
+        style="background-color: #eceff1"
+      >
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-between p-4 text-dark"
+          style="background-color: #6dc5d1"
+        >
+          <!-- Left -->
+          <div class="me-5">
+            <span>Liên hệ với nhóm 3 qua mạng xã hội:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="text-dark me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-dark me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-dark me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-dark me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-dark me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-dark me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold">Thành viên nhóm</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p>Tiêu Hoàng Đạt</p>
+                <p>Nguyễn Nam Hải</p>
+                <p>Mai Văn Hùng</p>
+                <p>Đặng Nguyệt Minh</p>
+                <p>Nguyễn Anh Quân</p>
+              </div>
+              <!-- Grid column -->
+
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Liên hệ</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+                <p><i class="fas fa-home mr-3"></i>Hà Nội - Việt Nam</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 0987654321</p>
+                <p><i class="fas fa-print mr-3"></i> + 0987654321</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2024 Copyright: Travelica
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
         <h2>Chatbot</h2>
         <span class="close-btn material-symbols-outlined">close</span>
-    </header>
-    <ul class="chatbox">
+      </header>
+      <ul class="chatbox">
         <li class="chat incoming">
-            <span class="material-symbols-outlined">smart_toy</span>
-            <p>Hi there <br>How can I help you today?</p>
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there <br />How can I help you today?</p>
         </li>
-    </ul>
-    <div class="chat-input">
-        <textarea placeholder="Enter a message..." spellcheck="false" id="message" name="message" required></textarea>
-        <input type="file" id="image-upload" accept="image/*" hidden>
-        <span id="attachment-btn" class="material-symbols-rounded">attachment</span>
+      </ul>
+      <div class="chat-input">
+        <textarea
+          placeholder="Enter a message..."
+          spellcheck="false"
+          id="message"
+          name="message"
+          required
+        ></textarea>
+        <input type="file" id="image-upload" accept="image/*" hidden />
+        <span id="attachment-btn" class="material-symbols-rounded"
+          >attachment</span
+        >
         <span id="file-name"></span>
         <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
     </div>
-</div>
-
-</body>
+    <!-- End of .container -->
+  </body>
 </html>
